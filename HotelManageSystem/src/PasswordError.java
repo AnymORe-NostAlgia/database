@@ -7,6 +7,7 @@ import javax.swing.JToggleButton;
 import javax.swing.JFormattedTextField;
 import javax.swing.JTable;
 import javax.swing.JSlider;
+import javax.swing.ImageIcon;
 import javax.swing.JCheckBox;
 import javax.swing.JLabel;
 import java.awt.Color;
@@ -36,9 +37,12 @@ public class PasswordError {
 		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		frame.setVisible(true);
+		frame.setTitle("Error");
 		
-		JLabel ErrorIcon = new JLabel("");
-		ErrorIcon.setBounds(22, 33, 40, 40);
+		ImageIcon error=new ImageIcon("img/Error.png");
+		
+		JLabel ErrorIcon = new JLabel(error);
+		ErrorIcon.setBounds(18, 27, 40, 40);
 		frame.getContentPane().add(ErrorIcon);
 		
 		JLabel ErrorText = new JLabel("√‹¬Î¥ÌŒÛ£¨«Î‘Ÿ¥Œ ‰»Î£°");
@@ -49,7 +53,7 @@ public class PasswordError {
 		JPanel panel = new JPanel();
 		panel.setBounds(0, 0, 274, 131);
 		frame.getContentPane().add(panel);
-		panel.setBackground(Color.ORANGE);
+		panel.setBackground(Color.LIGHT_GRAY);
 		//panel.setOpaque(true);
 		
 	}

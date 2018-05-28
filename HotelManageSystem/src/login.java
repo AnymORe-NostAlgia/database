@@ -164,7 +164,7 @@ public class login {
 			public void actionPerformed(ActionEvent e) {
 				
 				
-				
+				/*
 				//检查账号密码输入是否正确
 				try {
 					
@@ -191,7 +191,9 @@ public class login {
 					PasswordError PsError=new PasswordError();
 					System.out.println("密码错误");
 				}
-				
+				*/
+				MainPage my=new MainPage();
+				frame.dispose();
 			}
 		});
 		
