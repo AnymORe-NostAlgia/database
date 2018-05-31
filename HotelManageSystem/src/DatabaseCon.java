@@ -23,7 +23,7 @@ public class DatabaseCon {
 		}
 		
 		//MYSQL url
-		String url="jdbc:mysql://127.0.0.1:3306/hotelmanager?&useSSL=false&serverTimezone=GMT";
+		String url="jdbc:mysql://127.0.0.1:3306/hotelmanager?&useSSL=false&serverTimezone=GMT&allowPublicKeyRetrieval=true";
 		
 		//连接数据库
 		try {
